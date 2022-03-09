@@ -7,7 +7,7 @@ function malkifyText(node) {
            .replace(/\b[A-Z]\w+/g, "Malkovich")
            .replace(/\b[a-z]\w+/g, "malkovich")
 
-};
+}
 
 function malkifyImages() {
   const images = document.getElementsByTagName('img');
@@ -16,8 +16,7 @@ function malkifyImages() {
 
   for (let i = 0; i < 9; i++)
   {
-    malkovichImageFilenames.push(`pictures_of_john_malkovich/malk${i + 1}.jpeg`)
-    console.log("DEBUG: Image Filename: " + malkovichImageFilenames[i]);
+    malkovichImageFilenames.push(`pictures_of_john_malkovich/malk${i + 1}.jpeg`);
   }
 
   for (let i of images) {
@@ -27,8 +26,8 @@ function malkifyImages() {
 
     i.src = malkovichURL;
     i.srcset = malkovichURL;
-  };
-};
+  }
+}
 
 malkifyText(document.body);
 malkifyImages();
