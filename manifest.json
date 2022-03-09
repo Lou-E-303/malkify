@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Malkify",
+    "version": "1.0.0",
+    "web_accessible_resources": [{
+        "resources": ["pictures_of_john_malkovich/*.jpeg"],
+        "matches": ["<all_urls>"]
+    }],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": { "16": "icon.jpeg",
+        "48": "icon.jpeg",
+        "128": "icon.jpeg" }
+}
