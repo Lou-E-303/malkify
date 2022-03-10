@@ -1,12 +1,13 @@
 function malkifyText(node) {
-    if(node.nodeType === 1)
+    if(node.nodeType === 1) {
       return [].forEach.call(node.childNodes, malkifyText);
+    }
 
-    if(node.nodeType === 3)  
+    if(node.nodeType === 3) {
       node.textContent = node.textContent
-           .replace(/\b[A-Z]\w+/g, "Malkovich")
-           .replace(/\b[a-z]\w+/g, "malkovich")
-
+          .replace(/\b[A-Z]\w+/g, "Malkovich")
+          .replace(/\b[a-z]\w+/g, "malkovich")
+    }
 }
 
 function malkifyImages() {
