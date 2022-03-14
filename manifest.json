@@ -16,7 +16,7 @@
             ]
         }
     ],
-    "icons": { "16": "icon.jpeg",
-        "48": "icon.jpeg",
-        "128": "icon.jpeg" }
+    "icons": { "16": "pictures_of_john_malkovich/icon.png",
+        "48": "pictures_of_john_malkovich/icon.png",
+        "128": "pictures_of_john_malkovich/icon.png" }
 }
